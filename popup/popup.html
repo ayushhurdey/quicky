@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Quicky</title>
+    <style>      
+      h1{
+        text-align: center;
+      }
+      #tabURL{
+        width: 340px;
+        padding-left: 20px;
+        padding-right:20px;
+        margin: 10px;
+        text-overflow: ellipsis;
+        overflow-wrap: break-word;
+      }
+      #url{
+        width: 380px;
+      }
+      #wrapper{
+        background: url(white-background-img.jpeg) no-repeat center center fixed;
+        width: 360px;
+        padding: 20px;
+        margin: 10px;
+      }
+      #qrcode img{
+        width: 350px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h1>QUICKY</h1>
+    <div id = "url">
+      <p id="tabURL"></p>
+    </div>
+    
+    <div id="wrapper">
+      <div id="qrcode"></div>
+    </div>
+
+    <script src="qrcode.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

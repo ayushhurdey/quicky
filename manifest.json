@@ -1,0 +1,33 @@
+{
+  "description": "QR code link sharing betweeen devices.",
+  "manifest_version": 2,
+  "name": "Quicky",
+  "version": "1.0",
+  "homepage_url": "https://www.google.com/",
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "browser_action": {
+    "default_icon": "icons/border-48.png",
+    "default_title": "Quicky",
+    "default_popup": "popup/popup.html"
+  },  
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["quicky.js"]
+    }
+  ],
+
+  "permissions": [
+    "tabs"
+  ],
+
+  "background": {
+    "scripts": ["background/background.js"],
+    "persistent": true
+  }
+
+}
