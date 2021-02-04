@@ -21,6 +21,16 @@
     }
   ],
 
+  "commands": {
+    "open-shortcut": {
+      "suggested_key": {
+        "default": "Ctrl+Q",
+        "linux": "Ctrl+Q"
+      },
+      "description": "Shortcut for Opening Quicky"
+    }
+  },
+
   "permissions": [
     "tabs"
   ],
