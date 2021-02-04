@@ -19,3 +19,10 @@ chrome.runtime.onMessage.addListener( function(request,sender,sendResponse)
     }
     return true;
 });
+
+browser.commands.onCommand.addListener(function (command) {
+    if (command === "open-shortcut") {
+      console.log("Opening the popup!");
+      browser.browserAction.openPopup();
+    }
+  });
